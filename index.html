@@ -8,6 +8,12 @@
 
   <title>My link-in-bio</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
   <style>
     html {
       min-height: 100%;
@@ -24,10 +30,12 @@
       padding-bottom: 40px;
       background: linear-gradient(180deg, #e0f7ff, #d3f0ff, #c8e9ff, #bfe1ff, #b9d9ff, #b7cfff, #b8c5ff, #bcbaff);
       color: rgba(54, 36, 45, 0.89);
+      font-family: 'Open Sans';
     }
 
     a {
       color: rgba(12, 102, 7, 0.89);
+      text-decoration: none;
     }
 
     .item {
@@ -56,6 +64,7 @@
     .name-row {
       margin-bottom: 30px;
       text-align: center;
+      font-family: Raleway;
     }
 
     .social-icons-row {
@@ -68,6 +77,10 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
+      border-radius: 1000px;
+      padding: 5px;
+      padding-right: 53px;
+      box-shadow: 4px 4px 10px 0px rgba(98, 137, 244, 0.8);
     }
 
     .link-text{
@@ -75,9 +88,9 @@
       flex-grow: 1;
     }
 
-    * {
+    /* * {
       border: 1px red dashed;
-    }
+    } */
   </style>
 </head>
 
@@ -88,12 +101,12 @@
     </div>
 
     <div class="name-row">
-      name
+      <em><strong>name</strong></em>
     </div>
 
     <div class="social-icons-row">
       <a href="github.com" target="_blank">
-        github
+        <i class="fa-brands fa-github"></i> GitHub
       </a>
 
       <a href="linkedin.com" target="_blank">
